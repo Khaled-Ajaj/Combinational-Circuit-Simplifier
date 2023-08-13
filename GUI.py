@@ -83,7 +83,7 @@ def main():
         [sg.Text('Please enter minterms and don\'t cares (if any)')],
         [sg.Text("Minterms: ", justification='left'), sg.InputText("",size=(40,4),key="-MINTERMS-")],
         [sg.Text('                      Values: 0-1023')],
-        [sg.Text("Don't Cares: ", justification='left'), sg.InputText("",size=(40,4),key="-DCS-")],
+        [sg.Text("Don't \nCares:      ", justification='left'), sg.InputText("",size=(40,4),key="-DCS-")],
         [sg.Text('                      Values: 0-1023')],
         [sg.Button('Run'), sg.Button('Exit')],
         [sg.Text("Input must be comma seperated", justification='left')],
@@ -91,7 +91,7 @@ def main():
     ]
 
     # create window
-    window = sg.Window(title = "Combinational Circuit Simplifier Tool", layout = layout, margins = (100, 100))
+    window = sg.Window(title = "Combinational Circuit Simplifier Tool", layout = layout, margins = (80, 80))
 
     # Event Loop
     while True:             
